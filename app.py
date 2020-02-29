@@ -1,11 +1,16 @@
 #!/usr/bin/env python
+#importing libraries
 import random
+#declaring varibles
 min = 1
 max = 6
-
-roll_again = "yes"
-print ("We are rolling dices until we get snake eyes, or 1 , 1")
-while roll_again == "yes" or roll_again == "y":
+count = 0
+start = "yes"
+#prompt user
+print ("Let see how many times it takes until we get snake eyes, or 1 , 1\nPress Enter to begin:")
+temp = input()
+#start dice simulation
+while start == "yes":
     print ("Rolling the dices...")
     print ("The values are....")
     dice1 = random.randint(min, max)
@@ -13,6 +18,9 @@ while roll_again == "yes" or roll_again == "y":
     print ("----- -----\n"
            "|",dice1, "| |",dice2,"|\n"
            "----- -----")
+    #keeping count
+    count += 1
+    #When "snake-eyes" are rolled
     if dice1 == 1 and dice2 == 1:
-        print ("Game over")
+        print ("FINALLY \nIt took us",count,"times!")
         break
