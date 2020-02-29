@@ -10,7 +10,7 @@ dockerpath="edang1/diceroll"
 # Authenticate & Tag
 echo "Docker ID and Image: $dockerpath"
 docker login &&\
-    docker image tag diceroll:1.7 $dockerpath
+    docker image tag diceroll:2.2 $dockerpath
 
 # Push Image
 docker image push $dockerpath 

@@ -1,14 +1,17 @@
 #!/usr/bin/env python
 #importing libraries
 import random
+import time
 #declaring varibles
 min = 1
 max = 6
 count = 0
 start = "yes"
 #prompt user
-print ("Let see how many times it takes until we get snake eyes, or 1 , 1\nPress Enter to begin:")
-temp = input()
+print ("Let see how many times it takes until we get snake eyes, or 1 , 1")
+print ("Ready")
+print ("Set")
+print ("GO!")
 #start dice simulation
 while start == "yes":
     print ("Rolling the dices...")
